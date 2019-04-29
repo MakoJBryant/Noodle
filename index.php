@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Welcome to Noodle</title>
-    <!-- -->
+    <!-- git push -u origin master -->
     <meta charset="UTF-8">
     <meta name="description" content="Search the web for sites and images.">
     <meta name="keywords" content="Search Engine,Noodle,HTML,CSS,PHP,MySQL,XAMPP,JavaScript">
