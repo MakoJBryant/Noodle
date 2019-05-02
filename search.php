@@ -19,19 +19,22 @@ include("classes/SiteResultsProvider.php");
 <html>
 <head>
     <title>Welcome to Noodle</title>
+
     <meta charset="UTF-8">
     <meta name="description" content="Search the web for sites and images.">
     <meta name="keywords" content="Search Engine,Noodle,HTML,CSS,PHP,MySQL,XAMPP,JavaScript">
     <meta name="author" content="Mako J Bryant">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
     <div class="wrapper">
-
         <div class="header">
-
             <div class="headerContent">
 
                 <div class="logoContainer">
@@ -41,26 +44,20 @@ include("classes/SiteResultsProvider.php");
                 </div>
 
                 <div class="searchContainer">
-
-                    <form action="search.php" method="GET">
-                        
+                    <form action="search.php" method="GET">                        
                         <div class="searchBarContainer">
-                            
+                            <input type="hidden" name="type" value="<?php echo $type; ?>">
                             <input class="searchBox" type="text" name="term" value="<?php echo $term ?>">
                             <button class="searchButton">
                                 <img src="assets/images/icons/search.png">
                             </button>
 
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
 
-            <div class="tabsContainer">
-                
+            <div class="tabsContainer">                
                 <ul class="tabList">
 
                     <li class="<?php echo $type == 'sites' ? 'active' : '' ?>">
@@ -79,8 +76,6 @@ include("classes/SiteResultsProvider.php");
             </div>
         </div>
 
-
-
         <div class="mainResultsSection">
 
             <?php
@@ -96,12 +91,8 @@ include("classes/SiteResultsProvider.php");
 
         </div>
 
-
-
         <div class="paginationContainer">
-
             <div class="pageButtons">
-
                 <div class="pageNumberContainer">
                     <img src="assets/images/pageStart.png">
                 </div>
@@ -144,17 +135,13 @@ include("classes/SiteResultsProvider.php");
 
                 }
                 ?>
-
                 <div class="pageNumberContainer">
                     <img src="assets/images/pageEnd.png">
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
 
