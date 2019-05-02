@@ -196,7 +196,7 @@ function followLinks($url) {
 		followLinks($site);
 	}}
 
-$startUrl = "https://unsplash.com/";
+$startUrl = "https://www.soundcloud.com/";
 followLinks($startUrl);
 
 ?>
